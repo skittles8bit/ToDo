@@ -11,6 +11,8 @@ class NoteTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
+    static let cellHeight: CGFloat = 80.0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

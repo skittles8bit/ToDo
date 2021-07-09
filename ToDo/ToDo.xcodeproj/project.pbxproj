@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FA7DBD182698638600BC8008 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DBD162698638600BC8008 /* NoteTableViewCell.swift */; };
 		FA7DBD192698638600BC8008 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7DBD172698638600BC8008 /* NoteTableViewCell.xib */; };
+		FA7DBD1B26986B4F00BC8008 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DBD1A26986B4F00BC8008 /* AddNoteViewController.swift */; };
+		FA7DBD1D26986D6C00BC8008 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DBD1C26986D6C00BC8008 /* NoteDetailViewController.swift */; };
+		FA7DBD1F269874ED00BC8008 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DBD1E269874ED00BC8008 /* Note.swift */; };
 		FAFC91B026982A8100F3A782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC91AF26982A8100F3A782 /* AppDelegate.swift */; };
 		FAFC91B226982A8100F3A782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC91B126982A8100F3A782 /* SceneDelegate.swift */; };
 		FAFC91B426982A8100F3A782 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC91B326982A8100F3A782 /* NotesViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		FA7DBD162698638600BC8008 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		FA7DBD172698638600BC8008 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		FA7DBD1A26986B4F00BC8008 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		FA7DBD1C26986D6C00BC8008 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		FA7DBD1E269874ED00BC8008 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		FAFC91AC26982A8100F3A782 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFC91AF26982A8100F3A782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFC91B126982A8100F3A782 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA7DBD20269874F900BC8008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DBD1E269874ED00BC8008 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7DBD212698751400BC8008 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC91B326982A8100F3A782 /* NotesViewController.swift */,
+				FA7DBD162698638600BC8008 /* NoteTableViewCell.swift */,
+				FA7DBD172698638600BC8008 /* NoteTableViewCell.xib */,
+				FA7DBD1A26986B4F00BC8008 /* AddNoteViewController.swift */,
+				FA7DBD1C26986D6C00BC8008 /* NoteDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7DBD222698753C00BC8008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC91B526982A8100F3A782 /* Main.storyboard */,
+				FAFC91BA26982A8400F3A782 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FAFC91A326982A8100F3A782 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +97,11 @@
 			children = (
 				FAFC91AF26982A8100F3A782 /* AppDelegate.swift */,
 				FAFC91B126982A8100F3A782 /* SceneDelegate.swift */,
-				FAFC91B326982A8100F3A782 /* NotesViewController.swift */,
-				FAFC91B526982A8100F3A782 /* Main.storyboard */,
+				FA7DBD20269874F900BC8008 /* Models */,
+				FA7DBD222698753C00BC8008 /* Views */,
+				FA7DBD212698751400BC8008 /* Controllers */,
 				FAFC91B826982A8400F3A782 /* Assets.xcassets */,
-				FAFC91BA26982A8400F3A782 /* LaunchScreen.storyboard */,
 				FAFC91BD26982A8400F3A782 /* Info.plist */,
-				FA7DBD162698638600BC8008 /* NoteTableViewCell.swift */,
-				FA7DBD172698638600BC8008 /* NoteTableViewCell.xib */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -146,7 +179,10 @@
 			files = (
 				FAFC91B426982A8100F3A782 /* NotesViewController.swift in Sources */,
 				FAFC91B026982A8100F3A782 /* AppDelegate.swift in Sources */,
+				FA7DBD1F269874ED00BC8008 /* Note.swift in Sources */,
 				FAFC91B226982A8100F3A782 /* SceneDelegate.swift in Sources */,
+				FA7DBD1D26986D6C00BC8008 /* NoteDetailViewController.swift in Sources */,
+				FA7DBD1B26986B4F00BC8008 /* AddNoteViewController.swift in Sources */,
 				FA7DBD182698638600BC8008 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvi-lZ-GAm">
-                        <rect key="frame" x="16" y="50" width="273" height="18"/>
+                        <rect key="frame" x="16" y="55" width="273" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                     <constraint firstAttribute="trailing" secondItem="dVW-1G-cfi" secondAttribute="trailing" constant="15" id="TZc-zW-sb9"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Uvi-lZ-GAm" secondAttribute="trailing" constant="15" id="Vo0-bY-10h"/>
                     <constraint firstItem="dVW-1G-cfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bN8-4m-q8M"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Uvi-lZ-GAm" secondAttribute="bottom" constant="15" id="yeR-JC-xRT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Uvi-lZ-GAm" secondAttribute="bottom" constant="10" id="yeR-JC-xRT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
